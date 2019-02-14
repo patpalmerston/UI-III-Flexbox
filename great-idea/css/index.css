@@ -67,138 +67,187 @@ h1, h2, h3, h4, h5 {
 
 
 
-html {
-	width: 875px;
-	margin: 0 auto;
+.container {
+	width: 880px;
+	margin: auto;
 }
 
+/* Header Styles */
+
 header {
-	margin-top: 100px;
-  margin: 20px 0;
-	padding: 20px 0;
+	width: 100%;
+	display: flex;
 }
 
 header nav {
-	margin: 10px 0;
-	padding: 30px;
-  display: inline;
-	margin-left: -50px;
+	margin-top: 40px; 
+	width: 610px;
+	justify-content: space-between;
+	display: flex;
 }
 
 header nav a {
-	padding: 20px;
-  margin: 0px;
-	font-size: 12px;
-	color: grey;
+	text-decoration: none;
+	color: #b0b0b0;
 }
 
-.logo {
-	margin-left: 600px;
-	margin-top: -100px;
-	width: 20%;
-	height: 40px;
-	display: inline;
+header nav a:hover {
+	text-decoration: underline;
+	color: black;
 }
 
-
-
-h1 {
-	font-size: 60px;
-	margin-top: 0px;
-	margin: 20px;
-	margin-bottom: 0px;
-	display: inline-block;
-	white-space: pre-line;
-	text-align:center;
+header .logo {
+	margin: 28px 0 0 91px;
 }
 
-button {
-	margin-bottom: 100px;
-	margin-left: 50px;
-  display: inline;
-	padding: 8px 60px;
+/* Call To Action (CTA) Styles */
+
+.cta {
+	display: flex;
+	margin-top: 72px;
+	justify-content: flex-end;
+}
+
+.cta .cta-text {
+	font-size: 72px;
+	text-align: center;
+	letter-spacing: 5px;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+	margin: 0 82px 0 0;
+}
+
+.cta .cta-text button {
+	border: 1px double black;
+	font-size: 16px;
 	background: white;
-	border: 2px solid black;
+	width: 170px;
+	height: 32px;
+	margin-top: 10px;
+	cursor: pointer;
 }
 
-button:hover {
+.cta .cta-text button:hover {
+	background: black;
 	color: white;
-	background: darkblue;
 }
 
-.header-line {
-	margin-left: 450px;
-	margin-top: -250px;
-	margin-bottom: 0px;
-	width: 30%;
-	height: 40px;
-	display: inline-block;
+/* Main Content Styles */
+
+.main-content {
+ border-top: 2px solid black; 
+ border-bottom: 2px solid black;
+ margin: 75px 0 35px 0;
+ padding: 35px 0;
+ font-size: 16px;
+ line-height: 18px;
 }
 
-p {
-  line-height: 1.25;
-  margin: 20px 0;
+.main-content .top-content {
+	display: flex;
 }
 
-.my-inline {
-  margin: 20px 2%;
-  width: 45%;
-  display: inline-block;
-  vertical-align: bottom;
+.main-content .middle-img {
+	display: block;
+	margin: 30px auto;
 }
 
-.my-inline2 {
-  margin: 20px 2%;
-  width: 28%;
-  display: inline-block;
-  vertical-align: top;
+.main-content .bottom-content {
+	display: flex;
 }
 
-.upper-content {
-	display: flex; 
-	border-top: 2px solid black;
-	margin-top: 10px;
-	margin-bottom: 10px;
+.main-content .bottom-content p {
+	padding-right: 20px;
 }
 
-.lower-content {
-	border-bottom: 2px solid black;
-	margin-top: 10px;
-	margin-bottom: 30px;
+/* Contact Styles */
+
+.contact p {
+	margin: 15px 0;
 }
 
-address {
-	margin-bottom: 20px;
+/* Footer Styles */
+
+footer {
+	text-align: center;
+	margin: 40px 0 20px;
 }
 
-.footer {
-	margin-left: 400px;
-}
-
-
-
-
-/* Services CSS code */
+/* Services Styles */
 
 .services-content {
-	border: 2px solid red;
-	margin: auto 0;
 	display: flex;
-	width: auto 0;
-	background: grey;
-	flex-direction: row;
-	align-items: flex-start; 
-	justify-content: center;
 	flex-wrap: wrap;
-	/* margin: 20px 0;
-
+	justify-content: space-between;
+	line-height: 1.3;
 }
 
-.services-child {
+.services-content .services-header-img {
+	margin: 20px 0;
+}
+
+.services-content h1 {
+	font-size: 26px;
+	margin: 10px 0;
+}
+
+.services-content .services-text {
+border-bottom: 1px solid black;
+padding-bottom: 40px;
+margin-bottom: 20px
+}
+
+.services-content .card {
+	padding: 20px;
+	border: 1px solid black;
+	width: 420px;
+	background: whitesmoke;
+	margin: 20px 0;
+}
+
+.services-content .card button {
+	padding: 10px 40px;
+	margin-top: 20px;
+	cursor: pointer;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.services-content .card button:hover {
+	background: black;
+	color: white;
+} 
+
+.services-content .services-info ul {
+	margin: 20px;
+}
+
+.services-content .services-info ul li{
+	list-style: square;
+	padding: 5px;
+}
+
+.services-content .services-info {
 	display: flex;
-	width: 50px;
-  height: 50px;
-  background: gray;
-  border: 1px solid black;
-  color: white;
+	flex-wrap: wrap;
+	border-top: 2px solid black; 
+	margin: 20px 0 35px 0;
+	padding-top: 40px; 
+}
+
+.services-content .services-info .facts {
+width: 400px;
+margin: 0 60px 20px 0;
+}
+
+.services-content .services-info .facts p {
+margin-bottom: 20px;
+}
+
+.services-content .services-info .services-info-img {
+width: 420px;
+height: 300px;
 }
